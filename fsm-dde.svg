@@ -2,6 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
 <svg width="799" height="597" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<rect width="100%" height="100%" fill="white" />
 	<ellipse stroke="black" stroke-width="1" fill="none" cx="396.5" cy="173.5" rx="75" ry="75"/>
 	<text x="333.5" y="179.5" font-family="Times New Roman" font-size="20">Voltaje correcto</text>
 	<ellipse stroke="black" stroke-width="1" fill="none" cx="396.5" cy="444.5" rx="75" ry="75"/>
