@@ -18,5 +18,5 @@ El microcontrolador se encargará de medir constantemente la tensión de la bate
 
 ## Diagrama de Estados
 
-![sample SVG image](/fsm-dde.svg?raw=true)
+![sample SVG image](/fsm-dde.svg?raw)
 
