@@ -1,5 +1,5 @@
 
-# Trabajo Práctico Informática 2 - Control de acceso
+# Trabajo Práctico Informática 2 - Control de Tensión
 
 ## Memoria Descriptiva
 
@@ -18,5 +18,5 @@ El microcontrolador se encargará de medir constantemente la tensión de la bate
 
 ## Diagrama de Estados
 
-<img src="https://github.com/hernansilva02/TP2-INFO2/blob/main/fsm-dde.svg">
+![sample SVG image](https://github.com/hernansilva02/TP2-INFO2/blob/f613b7f26e1aa3fdd7c0d451ad0589776b48c541/fsm-dde.svg)
 
