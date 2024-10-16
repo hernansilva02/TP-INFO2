@@ -1,4 +1,4 @@
-/*
+/**
  * Title: avr_api.c
  *  Created on: 8 de jul. de 2015
  *      Author: Ing. Damian Corbalan
