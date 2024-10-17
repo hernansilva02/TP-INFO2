@@ -11,7 +11,7 @@ typedef enum {
     voltaje_incorrecto
 } estados_t;
 
-void f_inicio_atmega(void);
+void f_inicio_mcu(void);
 char leer_bat(void);
 void interrupt_handler(void);
 void activar_indicador_correcto(void); //activa la luz azul indicando que el voltaje de la bateria es correcto

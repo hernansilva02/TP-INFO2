@@ -6,8 +6,7 @@
 
 void f_inicio_mcu(void) {
     GpioInitStructure_AVR  voltaje_bat, leds, buzz;
-    SystickInitStructure_AVR systick;
-    ExternalInterruptInitStructure_AVR interrupcion;
+//    SystickInitStructure_AVR systick;
 
     voltaje_bat.modo = avr_GPIO_mode_Input;
     voltaje_bat.port = VOLTAJE_BAT_PORT;
@@ -24,14 +23,6 @@ void f_inicio_mcu(void) {
     buzz.pines = BUZZ_PIN;
     init_gpio(buzz);
 
-    //config de las interrupcion externas
-    interrupcion.interrupcion = avr_INT0;
-    interrupcion.modo = avr_ext_int_lowlevel;
-    interrupcion.avr_ext_interrupt_handler = interrupt_handler;
-    init_extern_interrupt(interrupcion);
-
-
-
     //config del timer
  //    systick.timernumber = avr_TIM0;
  //    systick.time_ms = 2000;
@@ -41,13 +32,12 @@ void f_inicio_mcu(void) {
 
 }
 
-void f_interrupt_handler(void) {
-    LEDS = 0;
-    EIMSK &= ~(1 << 0);
-}
-
 void activar_indicador_correcto(void) {
     LEDS = 1;
+}
+
+void activar_indicador_luminico_incorrecto(void) {
+    LEDS = 0;
 }
 
 char leer_bat(void) {

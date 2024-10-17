@@ -84,7 +84,7 @@ typedef enum
 #define avr_ADC_set_Channel(canal)	    ADMUX&=0xE0;ADMUX|=(ADC_CANAL_t)canal	//seleccion de canal
 #define avr_ADC_comienzo_conversion()	ADCSRA|=1<<ADSC
 
-void (*avr_adc_handler)(void);
+extern void (*avr_adc_handler)(void);
 
 typedef struct
 {

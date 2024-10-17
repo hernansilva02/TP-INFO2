@@ -53,7 +53,6 @@ typedef struct
 #include "avr_Timers.h"		//Libreria para control de Timers
 #include "avr_Adc.h"		//Librerias ADC
 #include "avr_Spi.h"		//Librerias SPI
-#include "avr_Uart.h"		//Librerias UART
 #include "avr_Gpio.h"		//Librerias para puertos de proposito general.
 /***********************************************************************************************/
 
