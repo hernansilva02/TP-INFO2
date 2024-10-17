@@ -1,4 +1,4 @@
 CompileFlags:                     # Tweak the parse settings
-  Add: -I/usr/avr/include
+  Add: [-mmcu=atmega128, -I/usr/avr/include]
   Compiler: avr-gcc
 
