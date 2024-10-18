@@ -25,6 +25,14 @@
 
 #include "../lib/avr_Extint.h"
 
+void (*interrupcion_external0)(void) = 0;
+void (*interrupcion_external1)(void) = 0;
+void (*interrupcion_external2)(void) = 0;
+void (*interrupcion_external3)(void) = 0;
+void (*interrupcion_external4)(void) = 0;
+void (*interrupcion_external5)(void) = 0;
+void (*interrupcion_external6)(void) = 0;
+void (*interrupcion_external7)(void) = 0;
 
 
 

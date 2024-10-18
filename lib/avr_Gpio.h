@@ -19,8 +19,8 @@
  *
  *
  *
- */
-
+*/
+#include <avr/io.h>
 #ifndef AVR_GPIO_H_
 #define AVR_GPIO_H_
 

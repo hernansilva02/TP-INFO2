@@ -1,7 +1,6 @@
 #include "../lib/conf.h"
 #include "../lib/lib.h"
 #include <avr/interrupt.h>
-#include <avr/io.h>
 
 void f_inicio_mcu(void) {
     GpioInitStructure_AVR  voltaje_bat, leds, buzz;

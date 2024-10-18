@@ -53,7 +53,7 @@ typedef enum
 
 
 
-void (*avr_ext_interrupt_handler)(void);
+extern void (*avr_ext_interrupt_handler)(void);
 
 typedef struct
 {
@@ -125,14 +125,14 @@ void (*interrupcion_PCINT1)(void);
 void (*interrupcion_PCINT2)(void);
 
 #endif
-void (*interrupcion_external0)(void);
-void (*interrupcion_external1)(void);
-void (*interrupcion_external2)(void);
-void (*interrupcion_external3)(void);
-void (*interrupcion_external4)(void);
-void (*interrupcion_external5)(void);
-void (*interrupcion_external6)(void);
-void (*interrupcion_external7)(void);
+extern void (*interrupcion_external0)(void);
+extern void (*interrupcion_external1)(void);
+extern void (*interrupcion_external2)(void);
+extern void (*interrupcion_external3)(void);
+extern void (*interrupcion_external4)(void);
+extern void (*interrupcion_external5)(void);
+extern void (*interrupcion_external6)(void);
+extern void (*interrupcion_external7)(void);
 
 
 

@@ -4,7 +4,7 @@
 #ifndef CONF_H
 #define CONF_H
 
-#include "avr_api.h"
+#include "avr_Gpio.h"
 void f_systick(void);
 void f_interrupt_handler(void);
 void reactivar_interrupcion(void);

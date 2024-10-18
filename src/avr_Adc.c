@@ -37,6 +37,7 @@
 
 
 #include "../lib/avr_Adc.h"
+void (*avr_adc_handler)(void) = 0; //incializa el puntero
 
 void null_adc_irq(void) {
 }
@@ -85,7 +86,6 @@ avr_ADC_Value_t leer_ADC(ADC_CANAL_t canal) {
 ADC_ERROR init_adc(AdcInitStructure_AVR ADC_init)			//Inicializa ADC
 {
 
-    void (*avr_adc_handler)(void) = 0;
 
 	ADCSRA = 0x00;
 	if (ADC_init.prescaler > avr_ADC_Prescaler_128)	//Si el prescales seleccionado es mayor que el maximo posible devuelve error

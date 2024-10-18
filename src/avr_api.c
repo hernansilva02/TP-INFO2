@@ -21,4 +21,3 @@
  *
  */
 
-#include "../lib/avr_api.h"
