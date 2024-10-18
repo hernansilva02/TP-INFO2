@@ -23,7 +23,7 @@
  *
  */
 
-#include "avr_Extint.h"
+#include "../lib/avr_Extint.h"
 
 
 

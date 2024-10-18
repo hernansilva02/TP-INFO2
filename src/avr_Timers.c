@@ -23,7 +23,7 @@
  */
 
 
-#include "avr_Timers.h"
+#include "../lib/avr_Timers.h"
 #include <avr/io.h>
 #include <avr/interrupt.h>
 

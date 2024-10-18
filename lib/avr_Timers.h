@@ -78,9 +78,6 @@ typedef enum{
 #define avr_TIM1_Out_Clear_OC1C	(1<<(COM1C1))
 #define avr_TIM1_Out_Set_OC1C	((1<<COM1C1)|(1<<(COM1C0)))
 
-#define F_CPU 1000000UL
-
-
 typedef enum{
 	avr_TIM_Interrupt_source_TimerOverflowIrq_avr,
 	avr_TIM_Interrupt_source_TimerCompareMatchAIrq_avr,

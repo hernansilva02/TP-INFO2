@@ -21,7 +21,7 @@
  *
  */
 
-#include "avr_Gpio.h"
+#include "../lib/avr_Gpio.h"
 #include "avr/io.h"
 
 

@@ -1,6 +1,5 @@
 #include "../lib/conf.h"
 #include "../lib/lib.h"
-#include "../lib/avr_api.h"
 #include <avr/interrupt.h>
 #include <avr/io.h>
 

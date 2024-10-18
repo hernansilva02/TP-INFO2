@@ -36,7 +36,7 @@
 
 
 
-#include "avr_Adc.h"
+#include "../lib/avr_Adc.h"
 
 void null_adc_irq(void) {
 }
