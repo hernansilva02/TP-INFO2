@@ -39,3 +39,4 @@ $(BUILD_DIR)/main.o:$(MAIN_FILE)
 
 clean:
 	rm -rf $(BUILD_DIR)
+	rm -f main.map
