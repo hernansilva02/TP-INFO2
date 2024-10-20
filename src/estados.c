@@ -1,8 +1,9 @@
 #include "../lib/lib.h"
+#include "../lib/conf.h"
 
 estados_t f_voltaje_correcto(void) {
     char voltaje = leer_bat();
-    if (voltaje) {
+    if (voltaje == HIGH) {
         activar_indicador_correcto();
         return voltaje_correcto; 
     }
@@ -11,7 +12,7 @@ estados_t f_voltaje_correcto(void) {
 
 estados_t f_voltaje_incorrecto(void) {
     char voltaje = leer_bat();
-    if (!voltaje) {
+    if (voltaje == LOW) {
         activar_indicador_luminico_incorrecto();
         activar_buzz();
         return voltaje_incorrecto;

@@ -32,11 +32,11 @@ void f_inicio_mcu(void) {
 }
 
 void activar_indicador_correcto(void) {
-    LEDS = 1;
+    LEDS = HIGH;
 }
 
 void activar_indicador_luminico_incorrecto(void) {
-    LEDS = 0;
+    LEDS = LOW;
 }
 
 char leer_bat(void) {
@@ -45,10 +45,11 @@ char leer_bat(void) {
 }
 
 void activar_buzz(void) {
-    BUZZ = 1;
-    if (time_buzz == 2000) {
-        BUZZ = 0;
+    BUZZ = HIGH;
+    if (time_buzz > 200) {
+        while (time_buzz < 400) {
+            BUZZ = LOW; 
+        }
         time_buzz = 0;
     }
-    return;
 }

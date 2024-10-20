@@ -3,6 +3,8 @@
 */
 #ifndef CONF_H
 #define CONF_H
+#define LOW 0
+#define HIGH 1
 
 #include "avr_Gpio.h"
 void f_systick(void);
