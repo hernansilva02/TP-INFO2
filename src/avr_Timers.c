@@ -38,6 +38,14 @@ volatile unsigned int tcnt3_value = 0;
 static void null_timer_interrupt(void){}
 static TIM_Clock_Source_o getprescaler(unsigned long,unsigned char);
 
+//incializacion de punteros a funciones del .h
+void (*avr_systick_handler) (void) = 0;
+void (*timer_ir_handler) (void) = 0;
+void (*avr_pwm_handler) (void) = 0;
+void (*tim0irq_user_handler)(void) = 0;
+void (*tim1irq_user_handler)(void) = 0;
+void (*tim2irq_user_handler)(void) = 0;
+void (*tim3irq_user_handler)(void) = 0;
 /*
  * This function initializes the timer in any configuration available
  * the timer init structure has all the needed parameters to the startup configuration.

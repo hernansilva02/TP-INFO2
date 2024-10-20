@@ -87,9 +87,9 @@ typedef enum{
 }Interrupt_source_o;
 
 
-void (*avr_systick_handler) (void);
-void (*timer_irq_handler) (void);
-void (*avr_pwm_handler) (void);
+extern void (*avr_systick_handler) (void);
+extern void (*timer_irq_handler) (void);
+extern void (*avr_pwm_handler) (void);
 
 typedef struct{
 	TIMERS_o timernumber;
@@ -125,19 +125,19 @@ typedef struct{
 #define defined_TIM3 defined (__AVR_ATmega128__)
 
 #if defined_TIM0
-void (*tim0irq_user_handler)(void);
+extern void (*tim0irq_user_handler)(void);
 #endif
 
 #if defined_TIM1
-void (*tim1irq_user_handler)(void);
+extern void (*tim1irq_user_handler)(void);
 #endif
 
 #if defined_TIM2
-void (*tim2irq_user_handler)(void);
+extern void (*tim2irq_user_handler)(void);
 #endif
 
 #if defined_TIM3
-void (*tim3irq_user_handler)(void);
+extern void (*tim3irq_user_handler)(void);
 #endif
 
 void init_generic_timer(TimersInitStructure_AVR);

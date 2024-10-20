@@ -13,6 +13,7 @@ estados_t f_voltaje_incorrecto(void) {
     char voltaje = leer_bat();
     if (!voltaje) {
         activar_indicador_luminico_incorrecto();
+        activar_buzz();
         return voltaje_incorrecto;
     }
     return voltaje_correcto;
