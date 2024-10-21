@@ -5,6 +5,7 @@ estados_t f_voltaje_correcto(void) {
     char voltaje = leer_bat();
     if (voltaje == HIGH) {
         activar_indicador_correcto();
+        desactivar_buzz();
         return voltaje_correcto; 
     }
     return voltaje_incorrecto;

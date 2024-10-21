@@ -53,3 +53,7 @@ void activar_buzz(void) {
         time_buzz = 0;
     }
 }
+
+void desactivar_buzz(void) {
+    BUZZ = 0;
+}
