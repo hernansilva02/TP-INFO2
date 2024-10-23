@@ -23,5 +23,5 @@ El microcontrolador se encargará de medir constantemente la tensión de la bate
 ## Preview
 
 <img src="https://github.com/hernansilva02/TP-INFO2/blob/main/assets/img/schematic.png" />
-<img src="https://github.com/hernansilva02/TP-INFO2/blob/main/assets/img/preview-opt.gif" />
+<img src="https://github.com/hernansilva02/TP-INFO2/blob/main/assets/img/preview.gif" />
 
